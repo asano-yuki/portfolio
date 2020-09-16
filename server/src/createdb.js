@@ -50,14 +50,14 @@ const profile = [
       'Webクリエイター能力認定試験'
     ],
     specialtyField : [
-      'フロントエンド',
-      'UI設計・デザイン'
+      'フロントエンド全般',
+      'UI・UXデザイン'
     ],
     specialtyTechnology : [
       'HTML',
       'CSS',
       'JavaScript',
-      'jQuery',
+      'Typescript',
       'React'
     ],
     specialtyWork : [
@@ -134,7 +134,7 @@ const skill = [
     category    : 'フロントエンド',
     subCategory : 'ライブラリ',
     years       : [
-      { start : null, end : null }
+      { start : new Date(2020, 4, 1), end : null }
     ],
     status : {
       practice : false,
@@ -205,7 +205,8 @@ const skill = [
     category    : 'フロントエンド',
     subCategory : 'ライブラリ',
     years       : [
-      { start : new Date(2020, 4, 1), end : new Date(2020, 6, 30) }
+      { start : new Date(2020, 4, 1), end : new Date(2020, 6, 30) },
+      { start : new Date(2020, 9, 1), end : new Date(2020, 9, 7) }
     ],
     status : {
       practice : false,
@@ -233,7 +234,7 @@ const skill = [
     category    : 'フロントエンド',
     subCategory : 'ライブラリ',
     years       : [
-      { start : null, end : null }
+      { start : new Date(2020, 9, 1), end : new Date(2020, 9, 7) }
     ],
     status : {
       practice : false,
@@ -359,7 +360,8 @@ const skill = [
     category    : 'フロントエンド',
     subCategory : 'ライブラリ',
     years       : [
-      { start : new Date(2020, 4, 1), end : null }
+      { start : new Date(2020, 4, 1), end : null },
+      { start : new Date(2020, 9, 1), end : new Date(2020, 9, 7) }
     ],
     status : {
       practice : true,
@@ -491,7 +493,7 @@ const skill = [
       practice : true,
       use      : false,
       unused   : true
-    } 
+    }
   },
   {
     _id         : skillId++,
@@ -653,7 +655,7 @@ const skill = [
     category    : 'ツール',
     subCategory : '',
     years       : [
-      { start : null, end : null },
+      { start : new Date(2020, 9, 1), end : new Date(2020, 9, 7) }
     ],
     status : {
       practice : false,
@@ -687,7 +689,8 @@ const experience = [
     title     : '広告代理店でDTPオペレーター',
     content   : [
       'illustrator(CS6)を使った求人広告の制作',
-      '近接、整列、反復、コントラストを意識したデザインを構築'
+      '近接、整列、反復、コントラストを意識したデザインを構築',
+      '社内ツールアプリの更新作業'
     ],
     scale    : '35(内制作メンバー20名)',
     contract : '派遣社員',
@@ -695,8 +698,8 @@ const experience = [
     role     : '制作メンバー',
     keySkill : 'illustrator',
     language : [
-      'HTML', 
-      'CSS', 
+      'HTML',
+      'CSS',
       'JavaScript(ES5)'
     ],
     db : [],
@@ -718,11 +721,11 @@ const experience = [
     endDate   : new Date(2019, 3, 1),
     title     : '官公庁でWebシステムの開発・保守・運用',
     content   : [
-      'インシデントWeb管理ステムの新規開発', 
-      'アクティビティ図の作成による業務分析', 
+      'インシデントWeb管理ステムの新規開発',
+      'アクティビティ図の作成による業務分析',
       '基本設計書の作成',
       'テーブル定義書、画面設計書の作成による外部設計',
-      'インシデント検索・入力画面、ユーザ管理(DB)、帳票出力(PDF)などの各種機能を実装', 
+      'インシデント検索・入力画面、ユーザ管理(DB)、帳票出力(PDF)などの各種機能を実装',
       'ExcelデータをDBにインポートするためのコンソールアプリケーションの開発'
     ],
     scale    : '2名(内開発メンバー2名)',
@@ -731,55 +734,55 @@ const experience = [
     role     : '開発メンバー',
     keySkill : 'ASP.NET',
     language : [
-      'HTML', 
-      'CSS', 
-      'Bootstrap 3.4.1', 
-      'JavaScript(ES5)', 
-      'jQuery(2.2.4)', 
-      'VB.NET', 
-      'C#', 
+      'HTML',
+      'CSS',
+      'Bootstrap 3.4.1',
+      'JavaScript(ES5)',
+      'jQuery(2.2.4)',
+      'VB.NET',
+      'C#',
       'SQL'
     ],
     db : [
-      'SQLServer 2012', 
+      'SQLServer 2012',
       'MySQL 5.6'
     ],
     os : [
       'Windows10'
     ],
     mw : [
-      'Windows Server 2012 R2', 
+      'Windows Server 2012 R2',
       'IIS'
     ],
     fw : [
       'ASP.NET Webフォーム 4.5'
     ],
     tool : [
-      'Visual Studio 2015', 
-      'Subversion', 
+      'Visual Studio 2015',
+      'Subversion',
       'Redmine'
     ],
     charge : [
-      '要件定義', 
-      '基本設計', 
-      '実装', 
-      '単体テスト', 
-      '結合テスト', 
+      '要件定義',
+      '基本設計',
+      '実装',
+      '単体テスト',
+      '結合テスト',
       '総合テスト'
     ]
   },
   {
     _id       : experienceId++,
     startDate : new Date(2019, 4, 1),
-    endDate   : null, 
+    endDate   : null,
     title     : '電子部品会社でWebアプリケーションの開発・保守・運用',
     content   : [
-      'デザインも含めたフロントエンドを担当', 
-      '電子部品の性能をシミュレーションするための新規アプリケーションの開発', 
-      '既存アプリケーションの改修・機能追加', 
-      'フロントエンド開発環境の構築にWebpackを導入', 
-      'JavaScript、jQueryによる複雑な非同期処理の実装', 
-      'XYグラフ、スミスチャートをSVGで描画', 
+      'UIデザインも含めたフロントエンドを担当',
+      '電子部品の性能をシミュレーションするための新規アプリケーションの開発',
+      '既存アプリケーションの改修・機能追加',
+      'フロントエンド開発環境の構築にWebpackを導入',
+      'JavaScript、jQueryによる複雑な非同期処理の実装',
+      'XYグラフ、スミスチャートをSVGで描画',
       'プロトタイプの作成など、提案型の開発スタイル(アジャイル)'
     ],
     scale    : '7名(内開発メンバー3名)',
@@ -788,9 +791,11 @@ const experience = [
     role     : '開発メンバー',
     keySkill : 'JavaScript',
     language : [
-      'HTML', 
-      'CSS', 
-      'JavaScript(ES2015以降)', 
+      'HTML',
+      'CSS',
+      'Pug',
+      'Ejs',
+      'JavaScript(ES2015以降)',
       'jQuery(3.1.0)',
       'Java 11'
     ],
@@ -805,22 +810,62 @@ const experience = [
     ],
     fw   : [],
     tool : [
-      'Visual Studio Code 2017', 
-      'Webpack 4', 
+      'Visual Studio Code 2017',
+      'Webpack 4',
       'Babel 7',
       'Jest',
       'Mocha',
-      'Maven 3.6', 
-      'Subversion', 
+      'Maven 3.6',
+      'Subversion',
       'Backlog'
     ],
     charge : [
-      '基本設計', 
-      '実装', 
-      '単体テスト', 
-      '結合テスト', 
-      '総合テスト', 
+      '基本設計',
+      '実装',
+      '単体テスト',
+      '結合テスト',
+      '総合テスト',
       '保守・運用'
+    ]
+  },
+  {
+    _id       : experienceId++,
+    startDate : new Date(2020, 9, 6),
+    endDate   : new Date(2020, 9, 12),
+    title     : 'express + react.jsの開発環境構築',
+    content   : [
+      'Webpackをフルスクラッチで導入',
+      'TypeScriptの導入',
+      'フロントエンド、サーバーサイドの開発環境を構築'
+    ],
+    scale    : '1名',
+    contract : '-',
+    style    : '単発 / リモート',
+    role     : '開発メンバー',
+    keySkill : 'Webpack',
+    language : [
+      'HTML',
+      'JavaScript(ES2015以降)',
+      'TypeScript'
+    ],
+    db : [],
+    os : [
+      'Windows10'
+    ],
+    mw : [
+      'Node.js 12.18.0(LTS)'
+    ],
+    fw : [
+      'React',
+      'Express'
+    ],
+    tool : [
+      'Visual Studio Code',
+      'Webpack',
+      'GitHub'
+    ],
+    charge : [
+      '開発環境構築'
     ]
   }
 ]

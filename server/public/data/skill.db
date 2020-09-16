@@ -2,14 +2,14 @@
 {"_id":2,"name":"CSS","category":"フロントエンド","subCategory":"","years":[{"start":{"$$date":1504191600000},"end":{"$$date":1556636400000}},{"start":{"$$date":1556636400000},"end":null}],"status":{"practice":true,"use":true,"unused":false}}
 {"_id":3,"name":"JavaScript","category":"フロントエンド","subCategory":"","years":[{"start":{"$$date":1504191600000},"end":{"$$date":1556636400000}},{"start":{"$$date":1556636400000},"end":null}],"status":{"practice":true,"use":true,"unused":false}}
 {"_id":4,"name":"Pug","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":{"$$date":1588258800000},"end":null}],"status":{"practice":true,"use":true,"unused":false}}
-{"_id":5,"name":"EJS","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":null,"end":null}],"status":{"practice":false,"use":true,"unused":false}}
+{"_id":5,"name":"EJS","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":{"$$date":1588258800000},"end":null}],"status":{"practice":false,"use":true,"unused":false}}
 {"_id":6,"name":"SCSS","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":{"$$date":1588258800000},"end":null}],"status":{"practice":false,"use":true,"unused":false}}
 {"_id":7,"name":"Bootstrap","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":{"$$date":1504191600000},"end":{"$$date":1556636400000}}],"status":{"practice":true,"use":false,"unused":true}}
 {"_id":8,"name":"Material-UI","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":null,"end":null}],"status":{"practice":false,"use":true,"unused":false}}
 {"_id":9,"name":"jQuery","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":{"$$date":1504191600000},"end":{"$$date":1556636400000}},{"start":{"$$date":1556636400000},"end":null}],"status":{"practice":true,"use":true,"unused":false}}
-{"_id":10,"name":"React","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":{"$$date":1588258800000},"end":{"$$date":1596034800000}}],"status":{"practice":false,"use":true,"unused":false}}
+{"_id":10,"name":"React","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":{"$$date":1588258800000},"end":{"$$date":1596034800000}},{"start":{"$$date":1601478000000},"end":{"$$date":1601996400000}}],"status":{"practice":false,"use":true,"unused":false}}
 {"_id":11,"name":"Redux","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":null,"end":null}],"status":{"practice":false,"use":true,"unused":false}}
-{"_id":12,"name":"TypeScript","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":null,"end":null}],"status":{"practice":false,"use":true,"unused":false}}
+{"_id":12,"name":"TypeScript","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":{"$$date":1601478000000},"end":{"$$date":1601996400000}}],"status":{"practice":false,"use":true,"unused":false}}
 {"_id":13,"name":"Raphael","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":{"$$date":1556636400000},"end":null}],"status":{"practice":true,"use":false,"unused":true}}
 {"_id":14,"name":"Snap","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":null,"end":null}],"status":{"practice":false,"use":true,"unused":false}}
 {"_id":15,"name":"styled-components","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":null,"end":null}],"status":{"practice":false,"use":true,"unused":false}}
@@ -18,7 +18,7 @@
 {"_id":18,"name":"Mocha","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":{"$$date":1588258800000},"end":null}],"status":{"practice":false,"use":true,"unused":false}}
 {"_id":19,"name":"Sinon","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":null,"end":null}],"status":{"practice":false,"use":true,"unused":false}}
 {"_id":20,"name":"Storybook","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":null,"end":null}],"status":{"practice":false,"use":true,"unused":false}}
-{"_id":21,"name":"Webpack","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":{"$$date":1588258800000},"end":null}],"status":{"practice":true,"use":true,"unused":false}}
+{"_id":21,"name":"Webpack","category":"フロントエンド","subCategory":"ライブラリ","years":[{"start":{"$$date":1588258800000},"end":null},{"start":{"$$date":1601478000000},"end":{"$$date":1601996400000}}],"status":{"practice":true,"use":true,"unused":false}}
 {"_id":22,"name":"BEM","category":"フロントエンド","subCategory":"設計","years":[{"start":{"$$date":1588258800000},"end":null}],"status":{"practice":true,"use":true,"unused":false}}
 {"_id":23,"name":"Flow","category":"フロントエンド","subCategory":"設計","years":[{"start":null,"end":null}],"status":{"practice":false,"use":true,"unused":false}}
 {"_id":24,"name":"AtomicDesign","category":"フロントエンド","subCategory":"設計","years":[{"start":null,"end":null}],"status":{"practice":false,"use":true,"unused":false}}
@@ -39,5 +39,5 @@
 {"_id":39,"name":"Visual Studio Code","category":"ツール","subCategory":"","years":[{"start":{"$$date":1556636400000},"end":null}],"status":{"practice":true,"use":true,"unused":false}}
 {"_id":40,"name":"Redmine","category":"ツール","subCategory":"","years":[{"start":{"$$date":1504191600000},"end":{"$$date":1556636400000}}],"status":{"practice":true,"use":false,"unused":true}}
 {"_id":41,"name":"Backlog","category":"ツール","subCategory":"","years":[{"start":{"$$date":1556636400000},"end":null}],"status":{"practice":true,"use":false,"unused":true}}
-{"_id":42,"name":"Git","category":"ツール","subCategory":"","years":[{"start":null,"end":null}],"status":{"practice":false,"use":true,"unused":false}}
+{"_id":42,"name":"Git","category":"ツール","subCategory":"","years":[{"start":{"$$date":1601478000000},"end":{"$$date":1601996400000}}],"status":{"practice":false,"use":true,"unused":false}}
 {"_id":43,"name":"Subversion","category":"ツール","subCategory":"","years":[{"start":{"$$date":1504191600000},"end":{"$$date":1556636400000}},{"start":{"$$date":1556636400000},"end":null}],"status":{"practice":true,"use":false,"unused":true}}

@@ -64,7 +64,6 @@ webApp.use(express.json())
 webApp.use((req: Request, res: Response, next: () => void) => {
   // CORSの設定
   origin.forEach(url => res.setHeader('Access-Control-Allow-Origin', url))
-  // res.setHeader('Access-Control-Allow-Origin' , origin)
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST')
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
   next()
