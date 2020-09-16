@@ -59,7 +59,7 @@ describe('use-date-period.tsx', () => {
 })
 
 // お問い合わせの送信ボタン押下
-describe.only('use-formik-contact.tsx', () => {
+describe('use-formik-contact.tsx', () => {
   let mock: jest.SpyInstance
   let onSubmit: (values: ValueProps) => Promise<boolean>
   // テスト用データ
@@ -95,7 +95,7 @@ describe.only('use-formik-contact.tsx', () => {
 
 // 実務経験年数の合計値を算出
 describe('use-make-experience-year.tsx', () => {
-  it.only('実務経験年数の合計値を算出', () => {
+  it('実務経験年数の合計値を算出', () => {
     const years: SkillState['years'] = [
       { start: '2015', end: '2016' },
       { start: '2016', end: '2018' }

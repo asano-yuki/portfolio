@@ -27,11 +27,11 @@
       opacity: 0.5;
     }
     @include sp {
-      height: 20px;
+      height: 40px;
     }
   }
   &__label {
-    padding-top: 2px;
+    padding-top: 2.5px;
     font-size: 0.1rem;
   }
 }

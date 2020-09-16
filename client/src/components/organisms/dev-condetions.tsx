@@ -13,9 +13,9 @@ const DevConditions = (): JSX.Element => {
   // チャート・凡例で使用するラベル
   const labels = [
     'React',
-    'UI設計・構築',
-    'BtoC向けサービス',
+    'UI・UXデザイン',
     'TypeScript',
+    'BtoC向けサービス',
     'Atomic Design'
   ]
   // チャート・凡例で使用する背景色
@@ -32,7 +32,7 @@ const DevConditions = (): JSX.Element => {
     data : {
       labels,
       datasets : [{
-        data            : [60, 10, 10, 10, 10],
+        data            : [40, 20, 10, 10, 10],
         backgroundColor : backgroundColors,
         borderWidth     : 0
       }]

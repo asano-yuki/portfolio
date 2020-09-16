@@ -22,17 +22,18 @@ const Breadcrumb: React.FC<Props> = ({
 }: Props) => {
   const clazz = 'breadcrumb'
   // リストの各項目を構築
+  const len = hierarchies.length - 1
   const items: JSX.Element[] = hierarchies.map((hierarchy, i) => {
     const { title = '', path } = hierarchy
     let icon: JSX.Element | null = null
     // 先頭要素以外にはアイコン(>)を追加
-    if (i !== 0) icon = <Icon icon={faAngleRight} className={`${clazz}__icon`} />
+    if (i !== len) icon = <Icon icon={faAngleRight} className={`${clazz}__icon`} />
     let item: JSX.Element = <span>{title}</span>
     if (path) item = <Link to={path} className={`${clazz}__link`}>{item}</Link>
     return (
       <li key={i} className={`${clazz}__item`} data-testid='item'>
-        {icon}
         {item}
+        {icon}
       </li>
     )
   })

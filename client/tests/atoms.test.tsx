@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { render } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
 
@@ -31,7 +32,11 @@ describe('breadcrumb.tsx', () => {
       { title: 'About'  , path: './about.html' },
       { title: 'Profile', path: './profile.html' }
     ]
-    const { container } = render(<Breadcrumb hierarchies={list} />)
+    const { container } = render(
+      <Router>
+        <Breadcrumb hierarchies={list} />
+      </Router>
+    )
     expect(container.querySelectorAll('a')).toHaveLength(2)
   })
 })

@@ -71,7 +71,7 @@ const ExperienceDetail: React.FC<Props> = ({
           <RelationTableRow thText='DB' tdText={db.join('、')} />
           <RelationTableRow thText='MW' tdText={mw.join('、')} />
           <RelationTableRow thText='FW' tdText={fw.join('、')} />
-          <RelationTableRow thText='ツール' tdText={tool.join('、')} />
+          <RelationTableRow thText='ツ‐ル' tdText={tool.join('、')} />
           <RelationTableRow thText='担当工程' tdText={charge.join('、')} />
         </RelationTable>
       </Structure>

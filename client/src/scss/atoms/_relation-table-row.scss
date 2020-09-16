@@ -13,11 +13,15 @@
     padding: 10px;
     background-color: $mainColor;
     border-radius: 5px 0 0 5px;
+    @include sp {
+      width: 48px;
+      padding: 5px;
+    }
   }
   &__body {
     width: calc(100% - #{$thWidth});
     padding: 10px;
-    line-height: .22rem;
+    line-height: 0.22rem;
     border-bottom: 1px solid #{$borderColor};
   }
 }

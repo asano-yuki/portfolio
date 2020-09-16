@@ -1,8 +1,14 @@
 .breadcrumb {
   display: flex;
+  @include sp {
+    flex-wrap: wrap;
+  }
   &__item {
     display: flex;
     align-items: center;
+    @include sp {
+      width: 100%;
+    }
   }
   &__icon {
     padding: 0 5px;

@@ -13,12 +13,12 @@
     width: 15px !important;
     height: 15px !important;
     margin-right: 10px;
-    @include tab {
-      margin-right: 0;
-      padding-bottom: 2px;
-    }
   }
   &_state_column {
     flex-direction: column;
+    svg[class*="__icon"] {
+      margin-right: 0;
+      padding-bottom: 2px;
+    }
   }
 }
