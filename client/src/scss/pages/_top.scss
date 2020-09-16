@@ -1,0 +1,10 @@
+@import '../organisms/profile';
+@import '../organisms/life-career';
+@import '../organisms/dev-condetions';
+@import '../organisms/about';
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

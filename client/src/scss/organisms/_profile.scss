@@ -1,0 +1,11 @@
+@import '../atoms/round-thumbnail';
+@import '../atoms/profile-summary';
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}

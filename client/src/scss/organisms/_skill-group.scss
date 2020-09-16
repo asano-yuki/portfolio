@@ -1,0 +1,9 @@
+@import "../atoms/group-item";
+@import "../molecules/group-list";
+
+.skill-group {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px;
+}

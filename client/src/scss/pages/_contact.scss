@@ -1,0 +1,151 @@
+.formik-contact {
+  display: flex;
+  flex-direction: column;
+  &__label {
+    display: inline-block;
+    color: $defaultColor;
+    font-size: 0.1rem;
+    padding-bottom: 5px;
+  }
+  &__error {
+    height: 15px;
+    margin-bottom: 20px;
+    color: $errorColor;
+    font-size: 0.1rem;
+  }
+  &__summary {
+    display: flex;
+    @include sp {
+      flex-direction: column;
+    }
+  }
+  // ラジオボタンを構築
+  &__summary-radio {
+    display: none;
+  }
+  &__summary-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 35px;
+    color: $defaultColor;
+    font-size: 0.1rem;
+    font-weight: bold;
+    border: 1px solid $borderColor;
+    @include sp {
+      width: 100%;
+    }
+    &:not(:last-child) {
+      border-right: none;
+      @include sp {
+        border-right: 1px solid $borderColor;
+        border-bottom: none;
+      }
+    }
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+      @include sp {
+        border-radius: 5px 5px 0 0;
+      }
+    }
+    &:last-child {
+      border-radius: 0 5px 5px 0;
+      @include sp {
+        border-radius: 0 0 5px 5px;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      margin-right: 5px;
+      border-radius: 50%;
+      border: 2px solid $borderColor;
+    }
+    &_state_checked {
+      color: $mainColor;
+      font-size: 0.1rem;
+      background-color: #fff;
+      &:before {
+        width: 5px;
+        height: 5px;
+        background-color: #fff;
+        border: 2px solid $mainColor;
+      }
+    }
+  }
+  // 入力項目(input、textarea)の共通レイアウト
+  @mixin input {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px;
+    color: $defaultColor;
+    font-size: $defaultFontSize;
+    font-family: $defaultFont;
+    letter-spacing: 0.02rem;
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+    &::placeholder {
+      color: #c5c5c5;
+      font-size: 0.11rem;
+    }
+    &:focus {
+      outline: none;
+      border-radius: 5px;
+      box-shadow: 0 0 0 1px $mainColor;
+    }
+  }
+  &__name,
+  &__email {
+    @include input;
+  }
+  &__contents {
+    @include input;
+    height: 200px;
+    resize: none;
+  }
+  // ボタンの共通レイアウト
+  @mixin btn {
+    width: 150px;
+    height: 35px;
+    color: #fff;
+    font-size: 0.12rem;
+    background-color: $borderColor;
+    border-radius: 5px;
+  }
+  &__btn-group {
+    display: flex;
+  }
+  &__submit {
+    @include btn;
+    margin-right: 35px;
+    &_state_on {
+      background-color: $mainColor;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  &__clear {
+    @include btn;
+    background-color: $mainColor;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.swal-title {
+  font-size: 0.18rem;
+}
+
+.swal-button {
+  background-color: $mainColor;
+}

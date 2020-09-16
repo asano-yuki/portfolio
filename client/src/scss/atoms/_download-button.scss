@@ -1,0 +1,16 @@
+.download-btn {
+  @extend $btn;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__icon.MuiIcon-root {
+    width: 30px;
+    height: 30px;
+    font-size: .25rem;
+    color: #fff;
+  }
+  &__text {
+    padding-left: 5px;
+    font-weight: bold;
+  }
+}

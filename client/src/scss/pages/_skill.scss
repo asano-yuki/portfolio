@@ -1,0 +1,10 @@
+@import "../molecules/skill-overview";
+@import "../atoms//capacity-list";
+@import "../organisms/skill-table";
+@import "../organisms/skill-group";
+
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

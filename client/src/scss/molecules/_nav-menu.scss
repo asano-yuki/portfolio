@@ -1,0 +1,42 @@
+@import "../atoms/icon-title";
+
+.nav-menu {
+  width: 100%;
+  margin-top: 10px;
+  &_state_column {
+    display: flex;
+    width: 100%;
+  }
+  &__item {
+    width: 100%;
+    @include tab {
+      &:not(:last-child) {
+        border-right: 1px solid #f1f1f1;
+      }
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 12.5px;
+    color: #fff;
+    background-color: $mainColor;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    &:hover,
+    &_state_on {
+      color: $mainColor;
+      background-color: $defaultBackColor;
+    }
+    @include tab {
+      justify-content: center;
+      padding: 5px 2.5px;
+    }
+  }
+  @include tab {
+    margin-top: 0;
+  }
+}

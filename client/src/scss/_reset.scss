@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../assets/fonts/Shrikhand-Regular.ttf");
+}
+
+$defaultFontSize: 0.11rem;
+
+$defaultFont: "メイリオ", Meiryo, "ヒラギノ角ゴシック", "Hiragino Sans",
+  sans-serif;
+$strongFont: "Shrikhand", cursive;
+
+// メインカラー変数
+$defaultColor: #868686;
+$defaultBackColor: #f1f1f1;
+$blackColor: #3a3a3a;
+$mainColor: #74c9d8;
+$borderColor: #e0e0e0;
+$linkColor: #8197e0;
+$errorColor: #eb7f7f;
+// サブカラー変数
+$subColorRed: #fd6f90aa;
+$subColorYellow: #fff6b0aa;
+$subColorBlue: #3a90b8aa;
+$subColorSkin: #080807aa;
+$subColorGreen: #94d7c7aa;
+
+// レスポンシブを定義
+$pc-lg: 1480px;
+$pc-md: 1080px;
+$tab: 768px;
+$sp: 480px;
+$sp-min: 320px;
+
+@mixin pc-lg {
+  @media screen and (max-width: $pc-lg) {
+    @content;
+  }
+}
+
+@mixin pc-md {
+  @media screen and (max-width: $pc-md) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width: $tab) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: $sp) {
+    @content;
+  }
+}
+
+body,
+main,
+section,
+header,
+nav,
+aside,
+footer,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+ul,
+li,
+a,
+input,
+textarea,
+table,
+tbody,
+thead,
+tr,
+th,
+td {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: $defaultFontSize;
+}
+
+html {
+  height: 100%;
+  font-family: $defaultFont;
+  font-size: 625%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: $defaultFontSize;
+  color: $defaultColor;
+  letter-spacing: 0.02rem;
+  background-color: $defaultBackColor;
+}
+
+a {
+  color: $mainColor;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section,
+header,
+footer,
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+input,
+button,
+select,
+textarea {
+  appearance: none;
+}
+
+button {
+  border: none;
+}
+
+.MuiSvgIcon-root.icon {
+  width: 0.3rem;
+  height: 0.3rem;
+}

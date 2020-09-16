@@ -1,0 +1,23 @@
+.legend {
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &:not(:last-child) {
+      padding-bottom: 10px;
+    }
+  }
+  &__color {
+    width: 30px;
+    height: 10px;
+    border: 1px solid $borderColor;
+  }
+  &__title {
+    padding-left: 10px;
+  }
+  &__text {
+    width: 100%;
+    padding-top: 3px;
+    font-size: 0.105rem;
+  }
+}

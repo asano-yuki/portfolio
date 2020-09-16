@@ -1,0 +1,24 @@
+@import "../molecules/lang-explanation-with-thumbnails";
+
+.about {
+  &__intro {
+    padding-top: 10px;
+    text-align: center;
+    @include sp {
+      padding-bottom: 30px;
+    }
+  }
+  &__overview {
+    max-width: 710px;
+    margin: 0 auto;
+    padding-top: 10px;
+    line-height: 0.22rem;
+    text-align: center;
+  }
+  &__site {
+    padding-top: 30px;
+    @include sp {
+      border-top: 1px solid $borderColor;
+    }
+  }
+}

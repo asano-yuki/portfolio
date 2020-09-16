@@ -1,0 +1,11 @@
+.life-career {
+  position: relative;
+  &__yaxes {
+    position     : absolute;
+    top          : 80px;
+    left         : 12px;
+    font-size    : 10.5px;
+    writing-mode : vertical-lr;
+    user-select  : none;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../atoms/lang-explanation";
+
+.lang-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding-bottom: 15px;
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    padding-top: 20px;
+    @include tab {
+      width: 100%;
+    }
+    @include sp {
+      padding-top: 25px;
+    }
+  }
+  &__thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,37 @@
+.progress-bar {
+  $height: 20px;
+  &__bar {
+    width: 100%;
+    height: $height - 1px;
+    background-color: #ececec;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  &__meter {
+    width: inherit;
+    height: $height;
+    background-color: $subColorRed;
+  }
+  &__scale {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__label {
+    position: relative;
+    padding-top: 3px;
+    padding-left: 10px;
+    font-size: 0.105rem;
+    &:not(:first-child):not(:last-child) {
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 0.5px;
+        height: 19px;
+        top: -19px;
+        left: 53%;
+        background-color: #fff;
+      }
+    }
+  }
+}

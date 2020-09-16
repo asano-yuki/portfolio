@@ -1,0 +1,12 @@
+@import "../molecules/nav-menu";
+
+.header-bottom {
+  .nav-menu {
+    display: flex;
+    &__title {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+    }
+  }
+}

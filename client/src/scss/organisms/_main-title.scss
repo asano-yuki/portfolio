@@ -1,0 +1,31 @@
+.main-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: calc(#{$pc-lg} - 40px);
+  height: 100%;
+  padding: 0 35px 0 40px;
+  margin: 0 auto;
+  &_state_open {
+    max-width: calc(#{$pc-lg} - 150px);
+  }
+  @include tab {
+    justify-content: left;
+    padding: 0 30px 0;
+    box-shadow: 0 5px 5px #33333344;
+  }
+  &__title {
+    color: $mainColor;
+    font-family: $strongFont;
+    font-size: 0.18rem;
+    letter-spacing: 0.06rem;
+    @include tab {
+      margin: 0 auto;
+      color: #fff;
+    }
+    @include sp {
+      font-size: 0.15rem;
+      letter-spacing: 0.04rem;
+    }
+  }
+}

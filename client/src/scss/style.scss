@@ -1,0 +1,88 @@
+@import "reset";
+@import "./atoms/structure";
+@import "./atoms/copyright";
+@import "./organisms/header";
+@import "./organisms/header-bottom";
+@import "./organisms/main-title";
+@import "./pages/top";
+@import "./pages/skill";
+@import "./pages/experience";
+@import "./pages/contact";
+
+#root {
+  height: 100%;
+}
+
+.contents {
+  &__header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    background-color: $mainColor;
+    box-shadow: 3px 0 5px #bebebe77;
+    z-index: 9;
+    @include tab {
+      display: none;
+    }
+  }
+  &__header-bottom {
+    display: none;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -5px 5px #bebebe77;
+    @include tab {
+      display: block;
+    }
+  }
+  &__title {
+    position: fixed;
+    height: 40px;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e4e4;
+    z-index: 10;
+    &_state_open {
+      width: calc(100% - 150px);
+      left: 150px;
+    }
+    &_state_close {
+      width: calc(100% - 42px);
+      left: 42px;
+    }
+    @include tab {
+      width: 100%;
+      left: 0;
+      background-color: $mainColor;
+    }
+  }
+  &__body {
+    max-width: $pc-lg;
+    min-width: $pc-md;
+    margin: 0 auto;
+    padding: 70px 35px 35px 190px;
+    &_state_open {
+      padding-left: 190px;
+    }
+    &_state_close {
+      padding-left: 80px;
+    }
+    @include tab {
+      min-width: $sp-min;
+      width: 100%;
+      padding: 80px 30px 20px 30px;
+    }
+  }
+  &__footer {
+    max-width: $pc-lg;
+    margin: 0 auto;
+    padding: 25px 0 0 0;
+    text-align: right;
+    @include tab {
+      padding-bottom: 40px;
+    }
+  }
+}

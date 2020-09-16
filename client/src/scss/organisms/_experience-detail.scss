@@ -1,0 +1,9 @@
+@import "../atoms/breadcrumb";
+@import "../atoms/relation-table-row";
+@import "../molecules/relation-table";
+
+.experience-detail {
+  &__breadcrumb {
+    margin-bottom: 15px;
+  }
+}

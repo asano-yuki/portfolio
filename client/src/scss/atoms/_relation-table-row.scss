@@ -1,0 +1,23 @@
+.relation-table-row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  // theadの幅を定義
+  $thWidth: 80px;
+  &__head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $thWidth;
+    color: #fff;
+    padding: 10px;
+    background-color: $mainColor;
+    border-radius: 5px 0 0 5px;
+  }
+  &__body {
+    width: calc(100% - #{$thWidth});
+    padding: 10px;
+    line-height: .22rem;
+    border-bottom: 1px solid #{$borderColor};
+  }
+}

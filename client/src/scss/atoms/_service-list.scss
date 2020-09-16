@@ -1,0 +1,28 @@
+.service-list {
+  &__item {
+    @include tab {
+      padding: 3px;
+      background: #f1f1f1;
+      border-radius: 50%;
+    }
+  }
+  &__img {
+    width: 23px;
+    height: 23px;
+    @include tab {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tab {
+      flex-direction: row;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

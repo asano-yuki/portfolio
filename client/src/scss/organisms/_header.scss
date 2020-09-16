@@ -1,0 +1,26 @@
+@import "../atoms/svg-button";
+@import "../atoms/service-list";
+@import "../molecules/nav-menu";
+
+.header {
+  &_state_open {
+    width: 150px;
+    @include tab {
+      width: 100%;
+    }
+  }
+  &_state_close {
+    width: 41.5px;
+    @include tab {
+      display: none;
+    }
+  }
+  &__arrow-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 11.5px 0 0;
+    @include tab {
+      display: none;
+    }
+  }
+}

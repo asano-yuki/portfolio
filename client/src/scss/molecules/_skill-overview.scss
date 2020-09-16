@@ -1,0 +1,59 @@
+@import "../atoms/titled-text";
+
+.skill-overview {
+  display: flex;
+  @include tab {
+    flex-direction: column;
+  }
+  &__item {
+    padding: 0 30px;
+    @include tab {
+      padding: 15px 0;
+    }
+    &:first-child {
+      padding-left: 0;
+      @include tab {
+        padding-top: 0;
+      }
+    }
+    &:last-child {
+      padding-right: 0;
+      @include tab {
+        padding-bottom: 0;
+      }
+    }
+    &:not(:last-child) {
+      border-right: 1px solid $borderColor;
+      @include tab {
+        border-right: none;
+        border-bottom: 1px solid $borderColor;
+      }
+    }
+  }
+  &__outer {
+    display: flex;
+    align-items: center;
+    @include tab {
+      max-width: 350px;
+      margin: 0 auto;
+    }
+  }
+  &__icon {
+    width: 50px !important;
+    height: 50px;
+    opacity: 0.4;
+    &_type_field {
+      color: $subColorRed;
+    }
+    &_type_tech {
+      color: $subColorYellow;
+      opacity: 0.8;
+    }
+    &_type_work {
+      color: $subColorBlue;
+    }
+  }
+  &__body {
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../atoms/legend";
+
+.dev-condetions {
+  display: flex;
+  justify-content: center;
+  @include sp {
+    flex-direction: column;
+    align-items: center;
+  }
+  &__legend {
+    align-self: center;
+    padding-left: 7%;
+    @include sp {
+      width: 185px;
+    }
+  }
+}

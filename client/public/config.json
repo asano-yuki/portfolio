@@ -1,0 +1,13 @@
+{
+  "origin": ["http://localhost:8080"],
+  "port": 80,
+  "protocol": {
+    "isSSL": false,
+    "keyPath": "******",
+    "certPath": "******"
+  },
+  "mail": {
+    "user": "******",
+    "pass": "******"
+  }
+}
