@@ -1,0 +1,45 @@
+@import "../../scss/reset";
+
+.extend-grid {
+  &__container {
+    color: $defaultColor;
+    .gridjs-wrapper {
+      box-shadow: none;
+    }
+  }
+  &__header {
+    margin-bottom: 20px;
+    padding: 1px;
+    .gridjs-search-input {
+      padding: 5px;
+      &::placeholder {
+        color: #999999;
+        font-size: 0.11rem;
+      }
+      &:focus {
+        outline: none;
+        border-radius: 5px;
+        box-shadow: 0 0 0 1px $mainColor;
+      }
+    }
+  }
+  &__table {
+    min-width: 1040px;
+    tr:nth-child(even) {
+      td {
+        background-color: #fdfdfd;
+      }
+    }
+  }
+  &__th {
+    text-align: center;
+    line-height: 24px;
+    z-index: 2;
+    .gridjs-sort {
+      background-color: transparent;
+    }
+  }
+  &__td {
+    text-align: center;
+  }
+}

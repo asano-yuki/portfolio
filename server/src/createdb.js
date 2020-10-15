@@ -162,7 +162,8 @@ const skill = [
     category    : 'フロントエンド',
     subCategory : 'ライブラリ',
     years       : [
-      { start : new Date(2017, 8, 1), end : new Date(2019, 3, 31) },
+      { start : new Date(2017, 8, 1) , end : new Date(2019, 3, 31) },
+      { start : new Date(2020, 9, 28), end : new Date(2019, 10, 18) },
     ],
     status : {
       practice : true,
@@ -206,10 +207,10 @@ const skill = [
     subCategory : 'ライブラリ',
     years       : [
       { start : new Date(2020, 4, 1), end : new Date(2020, 6, 30) },
-      { start : new Date(2020, 9, 1), end : new Date(2020, 9, 7) }
+      { start : new Date(2020, 9, 1), end : null }
     ],
     status : {
-      practice : false,
+      practice : true,
       use      : true,
       unused   : false
     }
@@ -234,10 +235,10 @@ const skill = [
     category    : 'フロントエンド',
     subCategory : 'ライブラリ',
     years       : [
-      { start : new Date(2020, 9, 1), end : new Date(2020, 9, 7) }
+      { start : new Date(2020, 9, 1), end : null }
     ],
     status : {
-      practice : false,
+      practice : true,
       use      : true,
       unused   : false
     }
@@ -346,10 +347,10 @@ const skill = [
     category    : 'フロントエンド',
     subCategory : 'ライブラリ',
     years       : [
-      { start : null, end : null }
+      { start : new Date(2020, 9, 28), end : new Date(2020, 10, 18) }
     ],
     status : {
-      practice : false,
+      practice : true,
       use      : true,
       unused   : false
     }
@@ -360,8 +361,7 @@ const skill = [
     category    : 'フロントエンド',
     subCategory : 'ライブラリ',
     years       : [
-      { start : new Date(2020, 4, 1), end : null },
-      { start : new Date(2020, 9, 1), end : new Date(2020, 9, 7) }
+      { start : new Date(2020, 4, 1), end : null }
     ],
     status : {
       practice : true,
@@ -389,7 +389,7 @@ const skill = [
     category    : 'フロントエンド',
     subCategory : '設計',
     years       : [
-      { start : null, end : null }
+      { start : new Date(2020, 9, 1), end : null }
     ],
     status : {
       practice : false,
@@ -403,10 +403,10 @@ const skill = [
     category    : 'フロントエンド',
     subCategory : '設計',
     years       : [
-      { start : null, end : null }
+      { start : new Date(2020, 9, 1), end : null }
     ],
     status : {
-      practice : false,
+      practice : true,
       use      : true,
       unused   : false
     }
@@ -655,10 +655,10 @@ const skill = [
     category    : 'ツール',
     subCategory : '',
     years       : [
-      { start : new Date(2020, 9, 1), end : new Date(2020, 9, 7) }
+      { start : new Date(2020, 9, 1), end : null }
     ],
     status : {
-      practice : false,
+      practice : true,
       use      : true,
       unused   : false
     }
@@ -846,7 +846,8 @@ const experience = [
     language : [
       'HTML',
       'JavaScript(ES2015以降)',
-      'TypeScript'
+      'TypeScript',
+      'Bootstrap 4.6'
     ],
     db : [],
     os : [
@@ -866,6 +867,52 @@ const experience = [
     ],
     charge : [
       '開発環境構築'
+    ]
+  },
+  {
+    _id       : experienceId++,
+    startDate : new Date(2020,  9, 28),
+    endDate   : new Date(2020, 10, 18),
+    title     : '写真共有サイトの開発',
+    content   : [
+      'React + TypeScriptによる開発',
+      'StoryBookでUIコンポーネントの開発・運用',
+      'AtomicDesign + StoryBookによるUIコンポーネントの開発',
+      'レスポンシブデザイン',
+    ],
+    scale    : '1名',
+    contract : '-',
+    style    : '単発 / リモート',
+    role     : '開発メンバー',
+    keySkill : 'React',
+    language : [
+      'HTML',
+      'CSS',
+      'JavaScript(ES2015以降)',
+      'TypeScript'
+    ],
+    db : [],
+    os : [
+      'Windows10'
+    ],
+    mw : [
+      'Node.js'
+    ],
+    fw : [
+      'React'
+    ],
+    tool : [
+      'Visual Studio Code',
+      'Webpack',
+      'Jest',
+      'StoryBook',
+      'OpenAPI',
+      'Prism',
+      'GitHub'
+    ],
+    charge : [
+      '実装',
+      '単体テスト'
     ]
   }
 ]
