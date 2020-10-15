@@ -24,7 +24,7 @@ const ExperienceTable: React.FC<Props> = ({
 
   // extend-grid.tsxのdataプロパティを構築
   const experience = data.experience.map(item => {
-    const { _id, title, startDate, endDate, keySkill } = item
+    const { _id, title, startDate, endDate, style, keySkill } = item
     // 年月表記による所属期間の表示
     const period = getDatePeriod(startDate, endDate)
     // 詳細ボタンのアイコンコンポーネントを構築
@@ -39,6 +39,7 @@ const ExperienceTable: React.FC<Props> = ({
     return [
       title,
       period,
+      style,
       keySkill,
       iconLink
     ]
@@ -58,6 +59,7 @@ const ExperienceTable: React.FC<Props> = ({
             }
           }
         },
+        '勤務形態',
         '主要スキル',
         {
           name : '',

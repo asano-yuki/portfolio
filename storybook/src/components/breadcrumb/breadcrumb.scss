@@ -1,0 +1,22 @@
+@import "../../scss/reset";
+
+.breadcrumb {
+  display: flex;
+  &_direction_vertical {
+    flex-wrap: wrap;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    &_direction_vertical {
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  &__icon {
+    padding: 0 5px;
+    font-size: 0.14rem;
+  }
+}

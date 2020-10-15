@@ -1,12 +1,25 @@
 {
-  "name": "node",
-  "version": "1.0.0",
+  "name": "server",
+  "version": "1.0.2",
+  "description": "My portfolio site",
+  "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "watch": "webpack --watch --mode development",
     "create:db": "node data/createdb.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asano-yuki/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asano-yuki/portfolio/issues"
+  },
+  "homepage": "https://github.com/asano-yuki/portfolio#readme",
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",

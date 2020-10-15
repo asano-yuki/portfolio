@@ -1,14 +1,12 @@
 {
-  "name": "client",
+  "name": "storybook",
   "version": "1.0.2",
   "description": "My portfolio site",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "watch:dev": "webpack --mode development --watch",
-    "watch:build": "webpack --mode production --watch",
-    "server": "webpack-dev-server --mode development"
+    "test": "jest --verbose --watch",
+    "storybook": "start-storybook -p 6006",
+    "build:storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -22,9 +20,19 @@
   },
   "homepage": "https://github.com/asano-yuki/portfolio#readme",
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-links": "^6.0.21",
+    "@storybook/cli": "^6.0.21",
+    "@storybook/preset-scss": "^1.0.2",
+    "@storybook/react": "^6.0.21",
     "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/react": "^10.4.8",
+    "@testing-library/react-hooks": "^3.4.1",
     "@types/chart.js": "^2.9.22",
     "@types/history": "^4.7.7",
+    "@types/jest": "^26.0.3",
     "@types/react": "^16.9.41",
     "@types/react-dom": "^16.9.8",
     "@types/react-fontawesome": "^1.6.4",
@@ -36,6 +44,7 @@
     "@typescript-eslint/eslint-plugin": "^3.4.0",
     "@typescript-eslint/parser": "^3.4.0",
     "autoprefixer": "^9.8.4",
+    "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.6.0",
     "eslint": "^7.3.1",
@@ -43,6 +52,7 @@
     "eslint-plugin-react": "^7.20.0",
     "html-webpack-plugin": "^4.3.0",
     "imports-loader": "^0.8.0",
+    "jest": "^26.1.0",
     "npm": "^6.14.7",
     "postcss-loader": "^3.0.0",
     "react-is": "^16.13.1",
@@ -60,6 +70,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-regular-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@tippyjs/react": "^4.1.0",
