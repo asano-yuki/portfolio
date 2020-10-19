@@ -665,6 +665,20 @@ const skill = [
   },
   {
     _id         : skillId++,
+    name        : 'Bit',
+    category    : 'ツール',
+    subCategory : '',
+    years       : [
+      { start : null, end : null }
+    ],
+    status : {
+      practice : false,
+      use      : true,
+      unused   : false
+    }
+  },
+  {
+    _id         : skillId++,
     name        : 'Subversion',
     category    : 'ツール',
     subCategory : '',
@@ -780,10 +794,11 @@ const experience = [
       'UIデザインも含めたフロントエンドを担当',
       '電子部品の性能をシミュレーションするための新規アプリケーションの開発',
       '既存アプリケーションの改修・機能追加',
-      'フロントエンド開発環境の構築にWebpackを導入',
+      'フロントエンド開発環境の構築にWebpackをスクラッチで導入',
+      'Electronを使用して、既存Webアプリをデスクトップアプリとして開発',
       'JavaScript、jQueryによる複雑な非同期処理の実装',
       'XYグラフ、スミスチャートをSVGで描画',
-      'プロトタイプの作成など、提案型の開発スタイル(アジャイル)'
+      'プロトタイプの作成など、提案型の開発スタイル(アジャイル)',
     ],
     scale    : '7名(内開発メンバー3名)',
     contract : '正社員',
@@ -808,7 +823,9 @@ const experience = [
       'Node.js 12.18.0(LTS)',
       'Tomcat 8.5'
     ],
-    fw   : [],
+    fw   : [
+      'Electron'
+    ],
     tool : [
       'Visual Studio Code 2017',
       'Webpack 4',

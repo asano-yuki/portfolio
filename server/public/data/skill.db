@@ -40,4 +40,5 @@
 {"_id":40,"name":"Redmine","category":"ツール","subCategory":"","years":[{"start":{"$$date":1504191600000},"end":{"$$date":1556636400000}}],"status":{"practice":true,"use":false,"unused":true}}
 {"_id":41,"name":"Backlog","category":"ツール","subCategory":"","years":[{"start":{"$$date":1556636400000},"end":null}],"status":{"practice":true,"use":false,"unused":true}}
 {"_id":42,"name":"Git","category":"ツール","subCategory":"","years":[{"start":{"$$date":1601478000000},"end":null}],"status":{"practice":true,"use":true,"unused":false}}
-{"_id":43,"name":"Subversion","category":"ツール","subCategory":"","years":[{"start":{"$$date":1504191600000},"end":{"$$date":1556636400000}},{"start":{"$$date":1556636400000},"end":null}],"status":{"practice":true,"use":false,"unused":true}}
+{"_id":43,"name":"Bit","category":"ツール","subCategory":"","years":[{"start":null,"end":null}],"status":{"practice":false,"use":true,"unused":false}}
+{"_id":44,"name":"Subversion","category":"ツール","subCategory":"","years":[{"start":{"$$date":1504191600000},"end":{"$$date":1556636400000}},{"start":{"$$date":1556636400000},"end":null}],"status":{"practice":true,"use":false,"unused":true}}
